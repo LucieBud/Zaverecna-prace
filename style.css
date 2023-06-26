@@ -1,0 +1,32 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    line-height: 1rem;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(249, 229, 48);
+    padding: 2.5rem 1rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+    transition: transform 0.5s;
+}
+.navbar-brand:hover{
+    transform: scale(1.05);
+}
+.nav-link{
+    font-size: 18px;
+    text-decoration: underline transparent;
+    transition: text-decoration 0.5s;
+}
+.nav-link:hover{
+    
+    text-decoration-color: black;
+}
+.profile-foto{
+    width:150px;
+    height:auto;
+}
+
+
