@@ -26,6 +26,11 @@ class NewInsured{
                 localStorage.setItem("data", JSON.stringify(this.dataOfNewPeople));
                     
                 this.writeDataToTable();
+                //clear form after click on the button
+                this.nameInput.value="";
+                this.lastNameInput.value="";
+                this.ageInput.value="";
+                this.phoneNumberInput.value="";
                 
             }
             else{
@@ -49,17 +54,5 @@ class NewInsured{
             }
             
         }
-        //clear form after click on the button
-        this.nameInput.value="";
-        this.lastNameInput.value="";
-        this.ageInput.value="";
-        this.phoneNumberInput.value="";
-        
-    }
-        
-    
-    
+    }     
 }
-
-
-
