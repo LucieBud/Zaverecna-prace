@@ -12,7 +12,7 @@
     <title>Insurapp</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg mb-4">
         <div class="container-fluid row">
             <a class="navbar-brand col-2" href="#">Insurapp</a>
             <button class="navbar-toggler col-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,34 +31,36 @@
         </div>
     </nav>
     <article class="container">
-        <p class="h3 my-4">Pojištěnci</p>
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col" class="text-center">Jméno</td>
-                        <th scope="col" class="text-center">Příjmení</td>
-                        <th scope="col" class="text-center">Věk</td>
-                        <th scope="col" class="text-center">Telefonní číslo</td>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider" id="tbody">
-                    
-                </tbody>
-            </table>
-        </div>
-        <section>
-            <p class="h4 my-4">Nový pojištěnec</p>
+        <section class="mb-4">
+            <p class="h3 mb-4">Pojištěnci</p>
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">Jméno</td>
+                            <th scope="col" class="text-center">Příjmení</td>
+                            <th scope="col" class="text-center">Věk</td>
+                            <th scope="col" class="text-center">Telefonní číslo</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider" id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="mb-4">
+            <p class="h4 mb-4">Nový pojištěnec</p>
                     <form id="form" class= "column" novalidate>
                         <div class="col-sm-6 row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 mb-4">
                                 <label for="firstName">Křestní jméno</label>
                                 <input class="form-control mt-3" id="firstName" type="text" placeholder="Jana" required/>
                                 <div class="invalid-feedback">
                                     Zadejte prosím celé křestní jméno klienta.
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 mb-4">
                                 <label for="lastName">Příjmení</label>
                                 <input class="form-control mt-3" id="lastName" type="text" placeholder="Nováková" required/>
                                 <div class="invalid-feedback">
@@ -67,14 +69,14 @@
                             </div>
                         </div>
                         <div class="col-sm-6 row">
-                            <div class="col-sm-6 mt-4">
+                            <div class="col-sm-6">
                                 <label for="age">Věk</label>
                                 <input class="form-control mt-3" id="age" type="number" max="120" placeholder="30" required/>
                                 <div class="invalid-feedback">
                                     Zkontrolujte prosím Vámi zadaný věk klienta.
                                 </div>
                             </div>
-                            <div class="col-sm-6 mt-4">
+                            <div class="col-sm-6">
                                 <label for="phoneNumber">Telefonní číslo</label>
                                 <input class="form-control mt-3" id="phoneNumber" type="number" placeholder="603 123 123" required/>
                                 <div class="invalid-feedback">
@@ -88,7 +90,9 @@
                     </form>
         </section>
     </article>
-
+    <footer>
+        Vytvořeno &copy;LB 2023
+    </footer>
     
     <script src="./script.js"></script>
     <script src="./obsluha.js"></script>

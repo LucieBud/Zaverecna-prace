@@ -21,12 +21,14 @@ body{
     transition: text-decoration 0.5s;
 }
 .nav-link:hover{
-    
     text-decoration-color: black;
 }
-.profile-foto{
-    width:150px;
-    height:auto;
+footer{
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(211, 210, 210);
+
 }
+
 
 
